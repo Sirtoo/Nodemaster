@@ -43,4 +43,5 @@ SeraphMN1 IP:25676 YOURKEY MNOUTPUTS OUTPUTINDEX
 7. Debug window > Console "startmasternode alias false SeraphMN1"
 
 /usr/local/bin/activate_masternodes_seraph
+
 /usr/local/bin/seraph-cli -conf=/etc/masternodes/seraph_n1.conf masternode status
