@@ -6,17 +6,12 @@ cd seraph
 
 nano coin.env
 
-CODENAME=seraph
-
-MNODE_DAEMON=${MNODE_DAEMON:-/usr/local/bin/seraphd}
-
-MNODE_INBOUND_PORT=${MNODE_INBOUND_PORT:-25676}
-
-GIT_URL=https://github.com/seraphcoin/seraph.git
-
-SCVERSION="tags/Ubuntu16.04_V3.1.1"
-
-NETWORK_BASE_TAG="2018"
+#CODENAME=seraph
+#MNODE_DAEMON=${MNODE_DAEMON:-/usr/local/bin/seraphd}
+#MNODE_INBOUND_PORT=${MNODE_INBOUND_PORT:-25676}
+#GIT_URL=https://github.com/seraphcoin/seraph.git
+#SCVERSION="tags/Ubuntu16.04_V3.1.1"
+#NETWORK_BASE_TAG="2018"
 
 mv coin.compile seraph.compile
 
