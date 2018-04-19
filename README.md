@@ -1,22 +1,31 @@
 git clone https://github.com/masternodes/vps.git && cd vps
 
 cp -r new_coin_template seraph
+
 cd seraph
 
 nano coin.env
 
 CODENAME=seraph
+
 MNODE_DAEMON=${MNODE_DAEMON:-/usr/local/bin/seraphd}
+
 MNODE_INBOUND_PORT=${MNODE_INBOUND_PORT:-25676}
+
 GIT_URL=https://github.com/seraphcoin/seraph.git
+
 SCVERSION="tags/Ubuntu16.04_V3.1.1"
+
 NETWORK_BASE_TAG="2018"
 
 mv coin.compile seraph.compile
-mv coin.conf seraph.conf 
+
+mv coin.conf seraph.conf
+
 mv coin.env seraph.env 
 
 cd /root/vps
+
 mv seraph config
 
 ./install.sh -p seraph -c 5
