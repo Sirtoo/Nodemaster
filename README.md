@@ -4,7 +4,6 @@ cp -r new_coin_template seraph
 cd seraph
 
 nano coin.env
-# nano /root/vps/config/seraph/seraph.env
 
 CODENAME=seraph
 MNODE_DAEMON=${MNODE_DAEMON:-/usr/local/bin/seraphd}
@@ -27,6 +26,7 @@ nano /etc/masternodes/seraph_n1.conf
 /usr/local/bin/activate_masternodes_seraph
 
 /usr/local/bin/seraph-cli -conf=/etc/masternodes/seraph_n1.conf getinfo
+
 /usr/local/bin/seraph-cli -conf=/etc/masternodes/seraph_n1.conf mnsync status
 
 nano /tmp/seraph_masternode.conf
