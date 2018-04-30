@@ -56,3 +56,13 @@ SeraphMN1 IP:25676 YOURKEY MNOUTPUTS OUTPUTINDEX
 /usr/local/bin/activate_masternodes_seraph
 
 /usr/local/bin/seraph-cli -conf=/etc/masternodes/seraph_n1.conf masternode status
+
+//************************
+adding a new MN to the working service
+
+nano /etc/masternodes/seraph_n2.conf
+editing "masternodeprivkey"
+crtl+o enter crtl+x
+/usr/local/bin/activate_masternodes_seraph
+ON WIN WALLET: Debug window > Console "startmasternode alias false SeraphMN2"
+/usr/local/bin/seraph-cli -conf=/etc/masternodes/seraph_n2.conf masternode status
